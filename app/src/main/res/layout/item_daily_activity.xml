@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivppDialy"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fr"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        app:layout_constraintDimensionRatio="1:1"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNameDialy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:text="@string/dennie_fuzi"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textColor="@color/tdkblack"
+        app:layout_constraintStart_toEndOf="@id/ivppDialy"
+        app:layout_constraintTop_toTopOf="@+id/ivppDialy" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:text="@string/denifuzi"
+        android:textAppearance="@style/TextAppearance.Roboto.Regular.Body2"
+        android:textColor="@color/silver_voil"
+        app:layout_constraintStart_toEndOf="@id/tvNameDialy"
+        app:layout_constraintTop_toTopOf="@+id/ivppDialy" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:text="@string/diawali"
+        android:textAppearance="@style/TextAppearance.Roboto.Regular.Body2"
+        android:textColor="@color/tdkblack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivppDialy"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameDialy" />
+
+    <ImageView
+        android:id="@+id/ivImg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:src="@drawable/pagi"
+        app:layout_constraintStart_toStartOf="@id/tvDesc"
+        app:layout_constraintTop_toBottomOf="@id/tvDesc" />
+
+    <View
+        android:id="@+id/vline2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@color/bright_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivImg1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

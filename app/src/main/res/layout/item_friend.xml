@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvFrlist"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/illuminating_emerald"
+        app:cardCornerRadius="@dimen/_10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivFr1"
+                android:layout_width="@dimen/_72dp"
+                android:layout_height="@dimen/_0dp"
+                android:layout_marginStart="@dimen/_32dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_32dp"
+                android:src="@drawable/fr"
+                app:layout_constraintDimensionRatio="1:1"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvNamefr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginEnd="@dimen/_24dp"
+                android:text="@string/dennie_fuzi_alviyanies"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivFr1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_2dp"
+                android:layout_marginEnd="@dimen/_24dp"
+                android:text="@string/ui_designer"
+                android:textAppearance="@style/TextAppearance.Roboto.Light.Overline"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNamefr"
+                app:textAllCaps="false" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                app:cardBackgroundColor="@color/illuminating_emerald"
+                app:cardCornerRadius="@dimen/_10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNamefr"
+                app:strokeColor="@color/white"
+                app:strokeWidth="@dimen/_1dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvInstagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6dp"
+                    android:layout_marginTop="@dimen/_2dp"
+                    android:layout_marginEnd="@dimen/_6dp"
+                    android:layout_marginBottom="@dimen/_2dp"
+                    android:drawableStart="@drawable/ic_igs"
+                    android:drawablePadding="@dimen/_7dp"
+                    android:gravity="center"
+                    android:text="@string/instagram"
+                    android:textAppearance="@style/TextAppearance.Roboto.Regular.Caption"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

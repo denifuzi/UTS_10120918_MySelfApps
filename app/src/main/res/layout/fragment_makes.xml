@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+
+            <TextView
+                android:id="@+id/tvHobipop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Makanan Kesukaan"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAppearance="@style/TextAppearance.Roboto.Medium.Headline6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/illuminating_emerald"
+                android:layout_marginTop="@dimen/_20dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vLine"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHobipop"
+                android:background="@color/illuminating_emerald"
+                />
+
+            <ImageView
+                android:id="@+id/ivPesawat"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ayam"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_24dp"
+                app:layout_constraintEnd_toStartOf="@id/glFirst"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vLine"/>
+
+            <TextView
+                android:id="@+id/tvMakes"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/illuminating_emerald_80"
+                android:gravity="center"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:text="@string/ayam_goreng"
+                android:textAppearance="@style/TextAppearance.Roboto.Bold.Body2"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/ivPesawat"
+                app:layout_constraintEnd_toEndOf="@id/ivPesawat"
+                app:layout_constraintStart_toStartOf="@id/ivPesawat" />
+
+            <ImageView
+                android:id="@+id/ivKucing"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nasgor"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_24dp"
+                app:layout_goneMarginStart="@dimen/_8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/glFirst"
+                app:layout_constraintTop_toBottomOf="@id/vLine"/>
+
+            <TextView
+                android:id="@+id/tvKucing"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/illuminating_emerald_80"
+                android:gravity="center"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:text="Nasi Goreng"
+                android:textAppearance="@style/TextAppearance.Roboto.Bold.Body2"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/ivKucing"
+                app:layout_constraintEnd_toEndOf="@id/ivKucing"
+                app:layout_constraintStart_toStartOf="@id/ivKucing" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
